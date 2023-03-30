@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url(../src/assets/fondo.png), #7b4397;
+  background: url(../src/assets/fondo.png),
+    -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: url(../src/assets/fondo.png),
+    linear-gradient(to left, #7b4397, #dc2430);
+}
+
+.contenedor {
+  max-width: 950px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

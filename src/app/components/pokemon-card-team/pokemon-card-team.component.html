@@ -1,0 +1,19 @@
+<div
+  class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+>
+  <div *ngIf="team.length > 0">
+    <h5
+      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+    >
+      Equipo
+    </h5>
+    <ul
+      class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 mb-2"
+    >
+      <li *ngFor="let pokemon of team">{{ pokemon.name }}</li>
+    </ul>
+  </div>
+  <div *ngIf="team.length >= 6">
+    <p>Tu equipo Pokémon está completo, no puedes agregar más Pokémons.</p>
+  </div>
+</div>
